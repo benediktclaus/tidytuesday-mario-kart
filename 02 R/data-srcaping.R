@@ -55,7 +55,7 @@ downloads <- urls %>%
 
 # Preliminary cleaning of the raw data, i.e., unnest records tables, rename some
 # variables for clarity and recode factors
-raw_data <- downloaded %>% 
+raw_data <- downloads %>% 
   select(-url) %>% 
   mutate(
     wr_tables = map(wr_tables, ~ mutate(., duration = as.character(duration)))
@@ -72,7 +72,7 @@ raw_data <- downloaded %>%
 
 
 # Impute record date based on the duration of the previous record. First, the
-# date is parsed with lubdridate, which should throw 175 parsing failures.
+# date is parsed with lubdridate, which should throw 176 parsing failures.
 with_dates <- raw_data %>% 
   mutate(
     date = as_date(unparsed_date)
@@ -159,3 +159,4 @@ driver_table %>%
   ) %>% 
   left_join(nation_table, by = "player") %>%
   write_rds("01 Data/drivers.rds")
+
