@@ -20,6 +20,10 @@ achieved for the fastes **single lap** or the fastest completed race
 **shortcuts** in many of the tracks. Fortunately, shortcut and
 non-shortcut world records are listed separately.
 
+Furthermore, the Nintendo 64 was released for NTSC- and PAL-systems. On
+PAL-systems, the game runs a little slower. All times in this dataset
+are PAL-times, but they can be converted back to NTSC-times.
+
 ## Data Dictionary
 
 ### `world-records.rds`
