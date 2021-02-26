@@ -31,17 +31,17 @@ are PAL-times, but they can be converted back to NTSC-times.
 > Current world records in Mario Kart 64 with date achieved and player’s
 > name
 
-| variable         | class     | description                   |
-|:-----------------|:----------|:------------------------------|
-| track            | character | Track names                   |
-| type             | factor    | Single or three lap record    |
-| shortcut         | factor    | Shortcut or non-shortcut time |
-| player           | character | Player’s name                 |
-| system\_played   | character | Used system (NTSC or PAL)     |
-| date             | date      | World record date             |
-| time\_period     | period    | Time as `hms` period          |
-| time             | double    | Time in seconds               |
-| record\_duration | double    | Record duration in days       |
+| variable         | class     | description                     |
+|:-----------------|:----------|:--------------------------------|
+| track            | character | Track name                      |
+| type             | factor    | Single or three lap record      |
+| shortcut         | factor    | Shortcut or non-shortcut record |
+| player           | character | Player’s name                   |
+| system\_played   | character | Used system (NTSC or PAL)       |
+| date             | date      | World record date               |
+| time\_period     | period    | Time as `hms` period            |
+| time             | double    | Time in seconds                 |
+| record\_duration | double    | Record duration in days         |
 
 ### `drivers.rds`
 

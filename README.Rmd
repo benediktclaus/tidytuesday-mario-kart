@@ -20,9 +20,9 @@ Furthermore, the Nintendo 64 was released for NTSC- and PAL-systems. On PAL-syst
 
 |variable         |class     |description |
 |:----------------|:---------|:-----------|
-|track            |character | Track names |
+|track            |character | Track name |
 |type             |factor    | Single or three lap record |
-|shortcut         |factor    | Shortcut or non-shortcut time |
+|shortcut         |factor    | Shortcut or non-shortcut record |
 |player           |character | Player's name |
 |system_played    |character | Used system (NTSC or PAL) |
 |date             |date      | World record date |
