@@ -34,7 +34,7 @@ urls <- tracks %>%
     threelap_nosc    = str_glue("https://mkwrs.com/mk64/display.php?track={ url_track }"),
     singlelap_nosc   = str_glue("{ threelap_nosc }&f=1"),
     threelap_sc      = if_else(shortcut, str_glue("{ threelap_nosc }&m=1"), NA_character_),
-    singlelap_sc     = if_else(shortcut, str_glue("{ threelap_nosc }&f=1"), NA_character_)
+    singlelap_sc     = if_else(shortcut, str_glue("{ threelap_nosc }&f=1&m=1"), NA_character_)
   ) %>%
   select(-(shortcut:url_track)) %>%
   pivot_longer(
@@ -159,4 +159,3 @@ driver_table %>%
   ) %>% 
   left_join(nation_table, by = "player") %>%
   write_rds("01 Data/drivers.rds")
-
